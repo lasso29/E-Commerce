@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo1{
+    width: 70px;
+}
+.nav2{
+    background-color: #00235A !important;
+    color: white !important;
+    padding: auto !important;
+    height: 50px;
+    /* background-color: #00235A !important #FF5E14; */
+}
+.price{
+    Color: #FF5E14;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.description{
+    color: #00235A !important;
+    text-decoration: none;
+}
+.second-button{
+    background-color: #00235A !important;
+    color: white !important;
+}
+.card{
+    text-align: center;
+}
+footer{
+    background-color: #00235A;
+    padding: 20px;
+    align-items: center;
+}     
+.ebuy-logo{
+    width: 100px !important;
+}   
+.footer-desc{
+    color: white;
+    text-align: justify;
+}
+.footer-text{
+    color: white;
+}
+footer li a{
+    color: white;
+}
+footer li a:hover{
+    color: #FF5E14;
+}
+.social-link{
+    color: white;
+    font-size: 20px;
+}
+.company{
+    color: white;
+}
+.copyright a{
+    text-decoration: none;
+    color: #FF5E14;
+}
+@media (max-width:680px){
+    .list-unstyled{
+        text-align: center;
+    }
+    .footer-text{
+       text-align: center;
+    }
+    .link{
+        text-align: center;
+    }
+    .company{
+        text-align: center;
+    }
+    .news-letter{
+        text-align: center;
+    }
+    .ebuy-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    } 
+}

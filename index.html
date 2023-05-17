@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>E-Commerce</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid">
+            <img src="./Ebuy png.png" alt="" class="logo1"> <br>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-2 mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-file-earmark-person-fill"></i> Account
+                </a>
+                <ul class="dropdown-menu">
+                <a href="./signin.html"><button class="btn btn-warning text-light ms-3">SIGN IN</button></a>
+                  <li><a class="dropdown-item" href="#">My Account</a></li>
+                  <li><a class="dropdown-item" href="#">Order</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Saved Item</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Help Center</a></li>
+                  <li><a class="dropdown-item" href="#">Place and Track Order</a></li>
+                  <li><a class="dropdown-item" href="#">Order Cancellation</a></li>
+                  <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
+                  <li><a class="dropdown-item" href="#">Paymnet & Ebuy Account</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                  <button class="btn btn-warning text-light ms-3"> <b>LIVE CHAT</b></button>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search">
+              <button class="btn btn-info text-white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <!-- Available Goods -->
+      <div class="container">
+        <section class="goods-section">
+          <div class="row">
+            <div class="col-12">
+              <nav class="nav2 p-2 mb-2">
+                <h3 class="text1 ">Available Goods</h3>
+              </nav>
+            </div>
+            <div class="col-12">
+              <div class="row flex-row flex-nowrap" style="overflow-x: auto;">
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/48/2141622/1.jpg?1772" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Infinix Note 11, 4GB RAM + 128GB ROM,5000mAh, 4G - Green</b></p></a>
+                      <a href="description.html" class="price">₦ 120,000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/96/5192502/1.jpg?3378" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Bruhm 50" Inches UHD Smart TV (BTF-50SV) + Free Wall Bracket</b></p></a>
+                      <a href="description.html" class="price">₦ 180,250</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/36/7440622/1.jpg?9388" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Samsung Galaxy A14 - 6.6" (4GB RAM, 128GB ROM) - 5000mAh - Fingerprint</b></p></a>
+                      <a href="description.html" class="price">₦ 121,570</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/96/6792202/1.jpg?2520" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>XIAOMI Redmi 10C, 6.53-inch 4GB RAM, 128GB ROM - 5000mAh-Grey</b></p></a>
+                      <a href="description.html" class="price">₦ 119, 133</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/06/460353/1.jpg?1779" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Naviforce Brown Luxury Men's Leather Strap Wrist Watch</b></p></a>
+                      <a href="description.html" class="price">₦ 12,999</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/50/397518/1.jpg?8885" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Oraimo 27000mAh Portable Power Charging Bank</b></p></a>
+                      <a href="description.html" class="price">₦ 19,000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/40/8241302/1.jpg?0956" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Apple IPhone 14 Pro Max 6.7'' 6GB 128GB ROM Nano SIM - Deep Purple</b></p></a>
+                      <a href="description.html" class="price">₦ 925,999</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/032046/1.jpg?1703" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>20W Iphone Usb-c To Lightning PD Fast Lightning Charger</b></p></a>
+                      <a href="description.html" class="price">₦ 5,500</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/65/1071512/1.jpg?5231" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>P47 5.0 Wireless Bluetooth Stereo Foldable Headphone - White</b></p></a>
+                      <a href="description.html" class="price">₦ 4,300</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/99/9765232/1.jpg?2854" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Obdlink Mx Bluetooth EarPhone Bluetooth For Android And Iphone </b></p></a>
+                      <a href="description.html" class="price">₦ 6,800</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/97/7350032/1.jpg?3229" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Hp VICTUS GAMING 15 12TH GEN INTEL CORE I7 16GB RAM 1TB SSD</b></p></a>
+                      <a href="description.html" class="price">₦ 819,900</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/38/326078/1.jpg?5661" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Enkor New Extra Bass Home Theater System With LED Display </b></p></a>
+                      <a href="description.html" class="price">₦ 52,310</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br> 
+
+<!-- Checkout Goods -->
+      <div class="container">
+        <section class="goods-section">
+          <div class="row">
+            <div class="col-12">
+              <nav class="nav2 p-2 mb-2">
+                <h3 class="text1 ">Checkout Goods</h3>
+              </nav>
+            </div>
+            <div class="col-12">  
+              <div class="row flex-row flex-nowrap" style="overflow-x: auto;">
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/26/984696/1.jpg?4733" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Edifier 68 Watts Channel Bluetooth Multimedia Speakers (M206BT) - Black</b></p></a>
+                      <a href="description.html" class="price">₦ 31,900</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/85/877244/1.jpg?6693" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Orla Rechargeable Bluetooth Speaker Soundbar Deep Bass</b></p></a>
+                      <a href="description.html" class="price">₦ 15,890</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/36/8559012/1.jpg?1474" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Djack Perfect Bluetooth Home Theater 2102A</b></p></a>
+                      <a href="description.html" class="price">₦ 42,970</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/06/276389/1.jpg?8470" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Samsung Galaxy Note 8 - Single Sim - 6gb Ram - 64gb</b></p></a>
+                      <a href="description.html" class="price">₦ 138,000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/38/8142522/1.jpg?2219" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Samsung Galaxy S10 Plus 6.4" Single Sim 128gb/8gb Case,Screen Guide</b></p></a>
+                      <a href="description.html" class="price">₦ 180,000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/30/5667461/1.jpg?1274" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>General Electric DCQ Q4 1.77 Camera 1.3 2600mAh Phone - Black</b></p></a>
+                      <a href="description.html" class="price">₦ 7,400</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/40/8241302/1.jpg?0956" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Apple IPhone 14 Pro Max 6.7'' 6GB 128GB ROM Nano SIM - Deep Purple</b></p></a>
+                      <a href="description.html" class="price">₦ 925,999</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/86/032046/1.jpg?1703" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>20W Iphone Usb-c To Lightning PD Fast Lightning Charger</b></p></a>
+                      <a href="description.html" class="price">₦ 5,500</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/65/1071512/1.jpg?5231" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>P47 5.0 Wireless Bluetooth Stereo Foldable Headphone - White</b></p></a>
+                      <a href="description.html" class="price">₦ 4,300</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/99/9765232/1.jpg?2854" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Obdlink Mx Bluetooth EarPhone Bluetooth For Android And Iphone </b></p></a>
+                      <a href="description.html" class="price">₦ 6,800</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/97/7350032/1.jpg?3229" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Hp VICTUS GAMING 15 12TH GEN INTEL CORE I7 16GB RAM 1TB SSD </b></p></a>
+                      <a href="description.html" class="price">₦ 819,900</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/38/326078/1.jpg?5661" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Enkor New Extra Bass Home Theater System With LED Display </b></p></a>
+                      <a href="description.html" class="price">₦ 52,310</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
+<!-- Other Products -->
+      <div class="container">
+        <section class="goods-section">
+          <div class="row">
+            <div class="col-12">
+              <nav class="nav2 p-2 mb-2">
+                <h3 class="text1 ">Other Products </h3>
+              </nav>
+            </div>
+            <div class="col-12">  
+              <div class="row flex-row flex-nowrap" style="overflow-x: auto;">
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/62/9667422/1.jpg?7304" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Ace Elec F9 Wireless Fingerprint Touch Bluetooth Headset</b></p></a>
+                      <a href="description.html" class="price">₦ 2,900</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/2473921/1.jpg?0098" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Soft Cotton Six Pairs-in-1 Quality Ankle Socks (Different Colors)</b></p></a>
+                      <a href="description.html" class="price">₦ 1,200</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/906689/1.jpg?7178" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Pepsodent Triple Protection Toothpaste 130g Twin Pack</b></p></a>
+                      <a href="description.html" class="price">₦ 815</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/7014612/1.jpg?3811" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>High Quality Elegant Anti Blue Light Eyeglasses (Transparent)</b></p></a>
+                      <a href="description.html" class="price">₦ 2,300</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/32/4582711/1.jpg?6291" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>10" LED Selfie Ring Fill Light Dimmable For Video, Makeup</b></p></a>
+                      <a href="description.html" class="price">₦ 5,600</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/17/467018/1.jpg?9550" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>(Pure Table) Eva Water 75cl x12 (Eva) 99.9% Germ Free for Healthy Life</b></p></a>
+                      <a href="description.html" class="price">₦ 1,220</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/40/557279/1.jpg?0084" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Nexus 1.5HP Split Air Conditioner - White + Full Kit</b></p></a>
+                      <a href="description.html" class="price">₦ 165,000</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/2267121/1.jpg?6506" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Pinnacle German Industrial 5000W Food Crusher Blender 2L</b></p></a>
+                      <a href="description.html" class="price">₦ 18,060</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/45/2966212/1.jpg?3977" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Glenfiddich Single Malt Scotch Whisky 18yrs70cl x1</b></p></a>
+                      <a href="description.html" class="price">₦ 55,500</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/1.jpg?2694" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Binatone 2 Litres (CEJ-2005) Electric Jug - Black </b></p></a>
+                      <a href="description.html" class="price">₦ 11,100</a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-6 col-md-2 me-5 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/59/397662/1.jpg?0511" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Binatone Smoother Gliding Steam Iron (SI-1605) - Blue </b></p></a>
+                      <a href="description.html" class="price">₦ 6,700</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-2 mjye-4 me-md-4">
+                  <div class="card" style="width: 15rem; height: 24rem;">
+                    <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/33/681138/1.jpg?3256" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <a href="description.html" class="description"><p class="card-text"><b>Dewar's 12 Year Old Blended Scotch Whisky 70cl x1 (Dewar's) </b></p></a>
+                      <a href="description.html" class="price">₦ 13,630</a>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>  <br>
+
+
+    <!-- Other Products -->
+    <div class="container">
+      <section class="goods-section">
+        <div class="row">
+          <div class="col-12">
+            <nav class="nav2 p-2 mb-2">
+              <h3 class="text1 ">Other Products </h3>
+            </nav>
+          </div>
+          <div class="col-12">  
+            <div class="row flex-row flex-nowrap" style="overflow-x: auto;">
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/40/557279/1.jpg?0084" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Nexus 1.5HP Split Air Conditioner - White + Full Kit</b></p></a>
+                    <a href="description.html" class="price">₦ 165,000</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/51/2267121/1.jpg?6506" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Pinnacle German Industrial 5000W Food Crusher Blender 2L</b></p></a>
+                    <a href="description.html" class="price">₦ 18,060</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/45/2966212/1.jpg?3977" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Glenfiddich Single Malt Scotch Whisky 18yrs70cl x1</b></p></a>
+                    <a href="description.html" class="price">₦ 55,500</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 mjye-4 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/049652/1.jpg?2694" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Binatone 2 Litres (CEJ-2005) Electric Jug - Black </b></p></a>
+                    <a href="description.html" class="price">₦ 11,100</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/59/397662/1.jpg?0511" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Binatone Smoother Gliding Steam Iron (SI-1605) - Blue </b></p></a>
+                    <a href="description.html" class="price">₦ 6,700</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 mjye-4 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/33/681138/1.jpg?3256" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Dewar's 12 Year Old Blended Scotch Whisky 70cl x1 (Dewar's) </b></p></a>
+                    <a href="description.html" class="price">₦ 13,630</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/78/7014612/1.jpg?3811" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>High Quality Elegant Anti Blue Light Eyeglasses (Transparent)</b></p></a>
+                    <a href="description.html" class="price">₦ 2,300</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/32/4582711/1.jpg?6291" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>10" LED Selfie Ring Fill Light Dimmable For Video, Makeup</b></p></a>
+                    <a href="description.html" class="price">₦ 5,600</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/62/9667422/1.jpg?7304" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Ace Elec F9 Wireless Fingerprint Touch Bluetooth Headset</b></p></a>
+                    <a href="description.html" class="price">₦ 2,900</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/04/2473921/1.jpg?0098" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Soft Cotton Six Pairs-in-1 Quality Ankle Socks (Different Colors)</b></p></a>
+                    <a href="description.html" class="price">₦ 1,200</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/92/906689/1.jpg?7178" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>Pepsodent Triple Protection Toothpaste 130g Twin Pack</b></p></a>
+                    <a href="description.html" class="price">₦ 815</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-2 me-5 me-md-4">
+                <div class="card" style="width: 15rem; height: 24rem;">
+                  <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/17/467018/1.jpg?9550" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <a href="description.html" class="description"><p class="card-text"><b>(Pure Table) Eva Water 75cl x12 (Eva) 99.9% Germ Free for Healthy Life</b></p></a>
+                    <a href="description.html" class="price">₦ 1,220</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>  <br>
+
+
+
+      <footer>
+        <div class="container-footer">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div>
+                <img src="plain2.png" alt="" class="ebuy-logo"> <br> <br>
+                <p class="mb-30 footer-desc">Ebuy is platform for conducting online business transactions, primarily involving buying and selling products or services over the internet. Its primary function is to facilitate the exchange of goods or services between businesses and consumers or between businesses themselves.</p>
+              </div>
+            </div>
+            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+              <div class="">
+                <h4 class="footer-text">Quick Link</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Service</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Contact</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Terms and Condition</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Privacy Notice</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Official Store</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Help Centre</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="footer-text">Service</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#" class="text-decoration-none">Online Ordering</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Product Catalog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Secure Payment Processing</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Inventory Management</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Customer Accounts</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Reviews and Rating</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Marketing and Promotions</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Analytics and Reporting</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Order Management</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none">Customer Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="footer-text">Newsletter</h4>
+                <div class="news-letter">
+                  <label for="Newsletter" class="footer-text form-label">Subscribe To Our Newsletter</label>
+                  <input type="text" class="form-control" Placeholder="Enter Your Email">
+                  <button class="btn btn-primary mt-3">Subscribe</button>
+                </div>
+              </div> <br>
+              <div class="social-media">
+              <h5 class="footer-text">Contact Us</h4>
+                <div class="link">
+                <a href="https://wa.me/+2347051518935" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/effectual" class="social-link"><i class="bi bi-linkedin"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100079732368455" class="social-link"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com/Ayeffectual" class="social-link"><i class="bi bi-twitter"></i></a>
+                <a href="" class="social-link"><i class="bi bi-youtube"></i></a>
+                <a href="" class="social-link"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="copyright">
+              <p class="company">Developed and maintained by <a href="#" target="_blank">Effectual Creative Tech</a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
