@@ -1,67 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Document</title>
 </head>
-<body>
-    <h1>Description</h1>
-
-
-    <!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="container my-5">
-
-    <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
+<body onclick="load()">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+    <div class="container-fluid">
+      <img src="./Ebuy png.png" alt="" style="width:60px;"> 
+      <a class="navbar-brand fs-1 d-flex" href="#">E-Buy Cart <div class="dot bg-warning" id="count">0</div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Add Items to Cart</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+      </div>
     </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-    
-  </div>
-  <!-- End of .container -->
+  </nav>
+  <div class="col-6 col-md-2 me-5 me-md-4 mt-3" id="display"></div>
+  <style>
+    .dot{
+      width: 50px;
+      height: 50px;
+      border-radius: 1000px;
+      color: white;
+      font-size: 30px;
+      font-weight: 1000;
+      text-align: center;
+    }
+    #display{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      column-gap: 20px;
+    }
+    @media (max-width:680px){
+      body{
+        padding: 10px;
+      }
+      #display{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      #display div{
+        margin-top: 10px;
+      }
+    }
+  </style>
+  <script>
+    let eachCart=[]
+    let getGoods=JSON.parse(localStorage.getItem('allGood'))
+    function disp(){
+      display.innerHTML=" "
+      getGoods.map((eachGood, i)=>{
+        display.innerHTML+=`
+        <div class="card p-4 pb-4" style="width: 15rem;">
+          <div class="card-img-top">${eachGood.img}</div>
+          <div id="card-body">
+            <p class="description"><p class="card-text"><b>${eachGood.description}
+            </b></p></p>
+            <a href="description.html" class="price">${eachGood.price}</a><br>
+            
+            <button class="btn btn-warning" onclick="add(${i})">Add to cart</button>
+            
+          </div>
+        </div>  
+        `
+      })
+    }
+    disp()
+    const add=((eachgood)=>{
+      eachCart.push(getGoods[eachgood])
+      console.log(eachCart)
+      localStorage.setItem('cart', JSON.stringify(eachCart))
+    })
+
+    const del=((eachgood)=>{
+      eachCart.slice(eachgood,1)
+      console.log(eachCart)
+      disp()
+      localStorage.setItem('cart', JSON.stringify(eachCart))
+    })
+
+    const load=()=>{
+      let getcart=JSON.parse(localStorage.getItem('cart'))
+      getcart.map((allcart, i)=>{
+        count.innerHTML=i+1
+      })
+    }
+    load()
+    console.log(getGoods)
+  </script>
 </body>
 </html>

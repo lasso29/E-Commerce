@@ -63,6 +63,7 @@ footer li a:hover{
     text-decoration: none;
     color: #FF5E14;
 }
+
 @media (max-width:680px){
     .list-unstyled{
         text-align: center;
@@ -85,4 +86,7 @@ footer li a:hover{
         margin-right: auto;
         width: 60%;
     } 
+    .col-6{
+        margin-left: 2px;
+    }
 }
