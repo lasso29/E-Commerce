@@ -10,3 +10,9 @@
     font-size: 20px;
     text-transform: uppercase;
 }
+button{
+    border-radius: 15px !important;
+    background-color:#00235A;
+    font-size: 23px;
+    color: white;
+}

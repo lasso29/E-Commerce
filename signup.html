@@ -8,8 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <style> 
+        @media (max-width:600px) {
+            .container2{
+                width: 95% !important;
+            }
+        }
+    </style>
     <div class="container">
         <div class="row">
     <div class=" container2 col-12 mx-auto text-center w-75 shadow-lg p-5 mt-5">
@@ -21,7 +28,7 @@
       <input class="mt-2 form-control" type="text" placeholder="Phone Number" id="phoneNumber">
       <input class="mt-2 form-control" type="password" placeholder="Create Password" id="password">
       <input class="mt-2 form-control" type="password" placeholder="Confirm Password" id="cmPassword">
-      <button class="btn btn-warning w-100 mt-2" onclick="signUp()">Create an Account</button>
+      <button class="w-100 mt-2" onclick="signUp()">Create an Account</button>
       <p>BY cliking the signup button you agree to our <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy.</a></p>
      <a href="./Signin.html" class=""><input type="checkbox">  <b> KINDLY LOGIN IF YOU ARE AN EXISTING USER</b>
      </div></a>
@@ -29,6 +36,32 @@
     </div>
 
 
+<script>
+    var allUser = []
+    if(localStorage.ecoomerce){
+        allUser = JSON.parse(localStorage.getItem("ecommerce"))
+    }
+    function signUp(){
+        if(lName.value==""||fName.value==""||email.value==""||phoneNumber.value==""||password.value==""||cmPassword.value==""){
+            alert("Fill every details")
+        }
+        else{
+            var user = {
+                lastname: lName.value,
+                firstname: fName.value,
+                email: email.value,
+                phonenumber: phoneNumber.value,
+                createpassword: password.value,
+                confirmpassword: cmPassword.value
+            }   
+            allUser.push(user)
+            localStorage.setItem("ecommerce", JSON.stringify(allUser))
+            window.location.href = "signin.html"
+            console.log(allUser)    
+        }
+    }
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

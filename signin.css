@@ -4,3 +4,9 @@
 .text1{
     font-size: 20px;
 }
+button{
+    border-radius: 15px !important;
+    background-color:#00235A;
+    font-size: 23px;
+    color: white;
+}
