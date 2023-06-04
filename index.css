@@ -20,9 +20,17 @@
     font-weight: 600;
     font-size: 1.5em;
 }
+.price:hover{
+    color: #00235A !important;
+    background-color: #FF5E14;
+    padding: 5px;
+}
 .description{
     color: #00235A !important;
     text-decoration: none;
+}
+.description :hover{
+    color: #FF5E14;
 }
 .second-button{
     background-color: #00235A !important;

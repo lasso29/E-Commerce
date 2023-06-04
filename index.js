@@ -43,6 +43,24 @@ const xiaomi=()=>{
     Allgoods.push(eachgood)
     localStorage.setItem('allGood',JSON.stringify(Allgoods))
 }
+const watch=()=>{
+    let eachgood={
+        id:5,
+        img: `<img src="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/06/460353/1.jpg?1779" class="card-img-top" alt="...">`,
+        price: 12999,
+        description: `<p class="card-text"><b>Naviforce Brown Luxury Men's Leather Strap Wrist Watch</b></p>`
+    }
+    Allgoods.push(eachgood)
+    localStorage.setItem('allGood',JSON.stringify(Allgoods))
+}
+
+
+
+
+
+
+
+
 
 let getUser=JSON.parse(localStorage.getItem('ecommerce'))
 let userIndex=localStorage.getItem('userIndex')
